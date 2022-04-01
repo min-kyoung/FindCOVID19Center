@@ -17,6 +17,9 @@
 		A9A4716927F718AC0030F372 /* CenterNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4716827F718AC0030F372 /* CenterNetwork.swift */; };
 		A9A4716B27F719C30030F372 /* FindCOVIDCenterInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A4716A27F719C30030F372 /* FindCOVIDCenterInfo.plist */; };
 		A9A4716D27F719FC0030F372 /* FindCOVID19Center++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4716C27F719FC0030F372 /* FindCOVID19Center++Bundle.swift */; };
+		A9E9E5D827F7584E00D52FA0 /* SelectRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9E5D727F7584E00D52FA0 /* SelectRegionView.swift */; };
+		A9E9E5DA27F7585500D52FA0 /* SelectRegionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9E5D927F7585500D52FA0 /* SelectRegionViewModel.swift */; };
+		A9E9E5DC27F75B8300D52FA0 /* SelectRegionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E9E5DB27F75B8300D52FA0 /* SelectRegionItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		A9A4716827F718AC0030F372 /* CenterNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNetwork.swift; sourceTree = "<group>"; };
 		A9A4716A27F719C30030F372 /* FindCOVIDCenterInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FindCOVIDCenterInfo.plist; sourceTree = "<group>"; };
 		A9A4716C27F719FC0030F372 /* FindCOVID19Center++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FindCOVID19Center++Bundle.swift"; sourceTree = "<group>"; };
+		A9E9E5D727F7584E00D52FA0 /* SelectRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionView.swift; sourceTree = "<group>"; };
+		A9E9E5D927F7585500D52FA0 /* SelectRegionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionViewModel.swift; sourceTree = "<group>"; };
+		A9E9E5DB27F75B8300D52FA0 /* SelectRegionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				A9A4716C27F719FC0030F372 /* FindCOVID19Center++Bundle.swift */,
 				A9A4716227F715E20030F372 /* Entities */,
 				A9A4716727F717C20030F372 /* Network */,
+				A9E9E5DD27F75CCD00D52FA0 /* Presentation */,
 				A9A4715627F715BC0030F372 /* Assets.xcassets */,
 				A9A4715827F715BC0030F372 /* Preview Content */,
 				A9A4716A27F719C30030F372 /* FindCOVIDCenterInfo.plist */,
@@ -99,6 +106,16 @@
 				A9A4716827F718AC0030F372 /* CenterNetwork.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A9E9E5DD27F75CCD00D52FA0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A9E9E5D727F7584E00D52FA0 /* SelectRegionView.swift */,
+				A9E9E5D927F7585500D52FA0 /* SelectRegionViewModel.swift */,
+				A9E9E5DB27F75B8300D52FA0 /* SelectRegionItem.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E9E5DC27F75B8300D52FA0 /* SelectRegionItem.swift in Sources */,
+				A9E9E5D827F7584E00D52FA0 /* SelectRegionView.swift in Sources */,
+				A9E9E5DA27F7585500D52FA0 /* SelectRegionViewModel.swift in Sources */,
 				A9A4716427F716070030F372 /* Center.swift in Sources */,
 				A9A4716927F718AC0030F372 /* CenterNetwork.swift in Sources */,
 				A9A4716627F717B80030F372 /* CenterAPI.swift in Sources */,
