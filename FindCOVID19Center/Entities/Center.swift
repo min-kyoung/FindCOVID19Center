@@ -36,6 +36,8 @@ struct Center: Hashable, Decodable {
         case 강원도
         case 충청북도
         case 충청남도
+        case 전라북도
+        case 전라남도
         case 경상북도
         case 경상남도
         case 제주특별자치도

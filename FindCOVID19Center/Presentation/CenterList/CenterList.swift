@@ -13,9 +13,12 @@ struct CenterList: View {
     
     var body: some View {
         List(centers, id: \.id) { center in
-            CenterRow(center: center)
+            // centerList가 탭이 되었을 때 DetailView로 이동
+            NavigationLink(destination: CenterDetailView(center: center)) {
+                CenterRow(center: center)
+            }
+            .navigationTitle(center.sido.rawValue)
         }
-        
     }
 }
 

@@ -9,7 +9,7 @@ import Foundation
 
 extension Bundle {
     var apiKey: String {
-        guard let file = self.path(forResource: "FindCOVID19CenterInfo", ofType: "plist") else { return "" }
+        guard let file = self.path(forResource: "FindCOVIDCenterInfo", ofType: "plist") else { return "" }
         
         guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
         guard let key = resource["API_KEY"] as? String else { fatalError("FindCOVID19CenterInfo에 API_KEY 설정을 해주세요.")}

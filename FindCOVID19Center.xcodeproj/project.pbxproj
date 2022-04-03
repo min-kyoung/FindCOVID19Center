@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		A9A1271127F96A02004120CA /* CenterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1271027F96A02004120CA /* CenterRow.swift */; };
 		A9A1271327F96BFF004120CA /* CenterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1271227F96BFF004120CA /* CenterList.swift */; };
+		A9A1271727F9761A004120CA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1271627F9761A004120CA /* MapView.swift */; };
+		A9A1271927F97D6D004120CA /* CenterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1271827F97D6D004120CA /* CenterDetailView.swift */; };
 		A9A4715327F715BB0030F372 /* FindCOVID19CenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4715227F715BB0030F372 /* FindCOVID19CenterApp.swift */; };
-		A9A4715527F715BB0030F372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4715427F715BB0030F372 /* ContentView.swift */; };
 		A9A4715727F715BC0030F372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A4715627F715BC0030F372 /* Assets.xcassets */; };
 		A9A4715A27F715BC0030F372 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A4715927F715BC0030F372 /* Preview Assets.xcassets */; };
 		A9A4716127F715DD0030F372 /* CenterAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4716027F715DD0030F372 /* CenterAPIResponse.swift */; };
@@ -27,9 +28,10 @@
 /* Begin PBXFileReference section */
 		A9A1271027F96A02004120CA /* CenterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterRow.swift; sourceTree = "<group>"; };
 		A9A1271227F96BFF004120CA /* CenterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterList.swift; sourceTree = "<group>"; };
+		A9A1271627F9761A004120CA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A9A1271827F97D6D004120CA /* CenterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDetailView.swift; sourceTree = "<group>"; };
 		A9A4714F27F715BB0030F372 /* FindCOVID19Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCOVID19Center.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A4715227F715BB0030F372 /* FindCOVID19CenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCOVID19CenterApp.swift; sourceTree = "<group>"; };
-		A9A4715427F715BB0030F372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9A4715627F715BC0030F372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9A4715927F715BC0030F372 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9A4716027F715DD0030F372 /* CenterAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPIResponse.swift; sourceTree = "<group>"; };
@@ -54,6 +56,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9A1271427F975F5004120CA /* SelectRegionView */ = {
+			isa = PBXGroup;
+			children = (
+				A9E9E5D727F7584E00D52FA0 /* SelectRegionView.swift */,
+				A9E9E5D927F7585500D52FA0 /* SelectRegionViewModel.swift */,
+				A9E9E5DB27F75B8300D52FA0 /* SelectRegionItem.swift */,
+			);
+			path = SelectRegionView;
+			sourceTree = "<group>";
+		};
+		A9A1271527F97608004120CA /* CenterList */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1271027F96A02004120CA /* CenterRow.swift */,
+				A9A1271227F96BFF004120CA /* CenterList.swift */,
+			);
+			path = CenterList;
+			sourceTree = "<group>";
+		};
+		A9A1271A27F97D7E004120CA /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A9A1271627F9761A004120CA /* MapView.swift */,
+				A9A1271827F97D6D004120CA /* CenterDetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		A9A4714627F715BB0030F372 = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				A9A4715227F715BB0030F372 /* FindCOVID19CenterApp.swift */,
-				A9A4715427F715BB0030F372 /* ContentView.swift */,
 				A9A4716C27F719FC0030F372 /* FindCOVID19Center++Bundle.swift */,
 				A9A4716227F715E20030F372 /* Entities */,
 				A9A4716727F717C20030F372 /* Network */,
@@ -115,11 +144,9 @@
 		A9E9E5DD27F75CCD00D52FA0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A9E9E5D727F7584E00D52FA0 /* SelectRegionView.swift */,
-				A9E9E5D927F7585500D52FA0 /* SelectRegionViewModel.swift */,
-				A9E9E5DB27F75B8300D52FA0 /* SelectRegionItem.swift */,
-				A9A1271027F96A02004120CA /* CenterRow.swift */,
-				A9A1271227F96BFF004120CA /* CenterList.swift */,
+				A9A1271427F975F5004120CA /* SelectRegionView */,
+				A9A1271527F97608004120CA /* CenterList */,
+				A9A1271A27F97D7E004120CA /* DetailView */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -199,11 +226,12 @@
 				A9E9E5DC27F75B8300D52FA0 /* SelectRegionItem.swift in Sources */,
 				A9E9E5D827F7584E00D52FA0 /* SelectRegionView.swift in Sources */,
 				A9E9E5DA27F7585500D52FA0 /* SelectRegionViewModel.swift in Sources */,
+				A9A1271727F9761A004120CA /* MapView.swift in Sources */,
 				A9A4716427F716070030F372 /* Center.swift in Sources */,
 				A9A4716927F718AC0030F372 /* CenterNetwork.swift in Sources */,
 				A9A1271127F96A02004120CA /* CenterRow.swift in Sources */,
+				A9A1271927F97D6D004120CA /* CenterDetailView.swift in Sources */,
 				A9A4716627F717B80030F372 /* CenterAPI.swift in Sources */,
-				A9A4715527F715BB0030F372 /* ContentView.swift in Sources */,
 				A9A4716D27F719FC0030F372 /* FindCOVID19Center++Bundle.swift in Sources */,
 				A9A4716127F715DD0030F372 /* CenterAPIResponse.swift in Sources */,
 				A9A4715327F715BB0030F372 /* FindCOVID19CenterApp.swift in Sources */,

@@ -26,7 +26,7 @@ struct CenterRow: View {
             
             
             // url이 있으면 Link를 통해 전화를 걸 수 있도록 함
-            if let url = URL(string: "tel : " + center.phoneNumber) {
+            if let url = URL(string: "tel:" + center.phoneNumber) {
                 Link(center.phoneNumber, destination: url)
             }
         }
