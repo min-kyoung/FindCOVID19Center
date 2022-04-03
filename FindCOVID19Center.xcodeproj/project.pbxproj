@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9A1271127F96A02004120CA /* CenterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1271027F96A02004120CA /* CenterRow.swift */; };
+		A9A1271327F96BFF004120CA /* CenterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A1271227F96BFF004120CA /* CenterList.swift */; };
 		A9A4715327F715BB0030F372 /* FindCOVID19CenterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4715227F715BB0030F372 /* FindCOVID19CenterApp.swift */; };
 		A9A4715527F715BB0030F372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4715427F715BB0030F372 /* ContentView.swift */; };
 		A9A4715727F715BC0030F372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A4715627F715BC0030F372 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9A1271027F96A02004120CA /* CenterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterRow.swift; sourceTree = "<group>"; };
+		A9A1271227F96BFF004120CA /* CenterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterList.swift; sourceTree = "<group>"; };
 		A9A4714F27F715BB0030F372 /* FindCOVID19Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCOVID19Center.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A4715227F715BB0030F372 /* FindCOVID19CenterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCOVID19CenterApp.swift; sourceTree = "<group>"; };
 		A9A4715427F715BB0030F372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				A9E9E5D727F7584E00D52FA0 /* SelectRegionView.swift */,
 				A9E9E5D927F7585500D52FA0 /* SelectRegionViewModel.swift */,
 				A9E9E5DB27F75B8300D52FA0 /* SelectRegionItem.swift */,
+				A9A1271027F96A02004120CA /* CenterRow.swift */,
+				A9A1271227F96BFF004120CA /* CenterList.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -189,11 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A1271327F96BFF004120CA /* CenterList.swift in Sources */,
 				A9E9E5DC27F75B8300D52FA0 /* SelectRegionItem.swift in Sources */,
 				A9E9E5D827F7584E00D52FA0 /* SelectRegionView.swift in Sources */,
 				A9E9E5DA27F7585500D52FA0 /* SelectRegionViewModel.swift in Sources */,
 				A9A4716427F716070030F372 /* Center.swift in Sources */,
 				A9A4716927F718AC0030F372 /* CenterNetwork.swift in Sources */,
+				A9A1271127F96A02004120CA /* CenterRow.swift in Sources */,
 				A9A4716627F717B80030F372 /* CenterAPI.swift in Sources */,
 				A9A4715527F715BB0030F372 /* ContentView.swift in Sources */,
 				A9A4716D27F719FC0030F372 /* FindCOVID19Center++Bundle.swift in Sources */,

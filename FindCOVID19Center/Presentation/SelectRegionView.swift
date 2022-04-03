@@ -25,18 +25,18 @@ struct SelectRegionView: View {
                             // viewModel의 centers는 dictionary였기 때문에 sido를 직접 넣어주면 해당 sido가 가지고 있는 center의 리스트를 뽑아준다.
                             
                             // 셀을 탭하면 리스트 뷰로 전달된다.
-//                            NavigationLink(destination: ) {
-//                                SelectRegionItem(region: sido, count: centers.count)
-//                            }
+                            NavigationLink(destination: CenterList(centers: centers) ) {
+                                SelectRegionItem(region: sido, count: centers.count)
+                            }
                         }
-                        
-                    }
-                    .padding()
-                    .navigationTitle("COVID 19 예방접종 센터")
+                    }       
                 }
+                .padding()
+                .navigationTitle("COVID 19 예방접종 센터")
             }
+        }
     }
-}
+
 
 struct SelectRegionView_Previews: PreviewProvider {
     static var previews: some View {
